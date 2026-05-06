@@ -21,8 +21,7 @@ public class Main {
         case "nao" -> {
             System.out.println("Saindo do Sistemta");
 
-        }
-        ;
+        };
 
 
         }
