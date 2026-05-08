@@ -3,32 +3,17 @@ package com.libraryLoan;
 import java.time.LocalDate;
 
 public class Autor {
-    Integer idAutor;
-    String nomeAutor;
+    private int id;
+    private String nome;
+    private LocalDate dataNascimento;
 
-    public LocalDate getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(LocalDate dataNascimento) {
+    public Autor(int id, String nome, LocalDate dataNascimento) {
+        this.id = id;
+        this.nome = nome;
         this.dataNascimento = dataNascimento;
     }
 
-    LocalDate dataNascimento;
-
-    public Integer getIdAutor() {
-        return idAutor;
-    }
-
-    public void setIdAutor(Integer idAutor) {
-        this.idAutor = idAutor;
-    }
-
-    public String getNomeAutor() {
-        return nomeAutor;
-    }
-
-    public void setNomeAutor(String nomeAutor) {
-        this.nomeAutor = nomeAutor;
-    }
+    public int getId() { return id; }
+    public String getNome() { return nome; }
+    public LocalDate getDataNascimento() { return dataNascimento; }
 }

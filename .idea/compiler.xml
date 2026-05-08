@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="Library" target="17" />
-      <module name="Library.main" target="17" />
-      <module name="Library.test" target="17" />
+      <module name="Library" target="21" />
+      <module name="Library.main" target="21" />
+      <module name="Library.test" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>

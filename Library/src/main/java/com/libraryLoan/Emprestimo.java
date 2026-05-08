@@ -3,11 +3,19 @@ package com.libraryLoan;
 import java.time.LocalDate;
 
 public class Emprestimo {
-    Integer id;
-    Livro livro;
-    String nomeCliente;
-    LocalDate dataEmprestimo;
-    LocalDate dataDevolucao;
+    private Integer id;
+    private Livro livro;
+    private String nomeCliente;
+    private LocalDate dataEmprestimo;
+    private LocalDate dataDevolucao;
+
+    public Emprestimo(Integer id, Livro livro, String nomeCliente) {
+        this.id = id;
+        this.livro = livro;
+        this.nomeCliente = nomeCliente;
+        this.dataEmprestimo = LocalDate.now();
+        this.dataDevolucao = null;
+    }
 
     public Integer getId() {
         return id;
